@@ -170,12 +170,14 @@
 
     .logo {
         gap: 2px;
+        font-size: 0.80rem;
+        
     }
 
     .logo-icon {
         width: 20px;
         height: 20px;
-        font-size: 1rem;
+        font-size: 0.80rem;
     }
 
     .nav-center {
@@ -189,13 +191,15 @@
         align-items: flex-end;
     }
 
-    .header-phone {
-        gap: 2px;
-    }
+      .header-phone {
+            gap: 2px;
+            font-weight: 400;
+            font-size: 0.80rem;
+        }
 
     .header-phone svg {
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
     }
         .cta-nav:hover {
             transform: translateY(-2px);
@@ -218,12 +222,17 @@
         width: 100%;
         align-items: flex-start;
     }
-     .header-phone {
-        font-size: 0.80rem;
-        gap: 2px;
-    }
-       
 
+      .header-phone {
+            gap: 2px;
+            font-weight: 400;
+            font-size: 0.80rem;
+        }
+
+    .header-phone svg {
+        width: 16px;
+        height: 16px;
+    }
         .cta-nav:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 25px rgba(234, 88, 12, 0.5);
@@ -1462,6 +1471,7 @@
             }
 
         }
+
 
 
 
