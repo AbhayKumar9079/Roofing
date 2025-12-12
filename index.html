@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/roof-icon.png">
+    <title>Elite Roofing Co. - Premium Roofing Solutions</title>
+
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">
+                Elite Roofing
+            </div>
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <a href="tel:555-ROOF-PRO" class="header-phone">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/>
+                    <path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.086-1.391l-4.064-3.696z"/>
+                </svg>
+                (555) ROOF-PRO
+            </a>
+            <button class="cta-nav" onclick="openModal()">Get Estimate</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/hero-main.jpg" alt="Professional Roofing" id="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                🏆 Trusted Roofing Excellence Since 1995
+            </div>
+            <h1>
+                Protecting Your Home<br/>
+                <span class="gradient-text">One Roof at a Time</span>
+            </h1>
+            <p>
+                Expert roofing installation, repair, and maintenance. Premium materials, certified craftsmanship, and a lifetime of peace of mind.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="openModal()">
+                    Get Free Estimate
+                    <span>→</span>
+                </button>
+                <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                    Our Services
+                    <span>↓</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Floating CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <button class="sticky-cta-btn" onclick="openModal()">
+            📋 Get Free Estimate
+        </button>
+    </div>
+
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" data-target="8500">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="28">0</div>
+                <div class="stat-label">Years of Excellence</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="99">0</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="65">0</div>
+                <div class="stat-label">Expert Professionals</div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+<section class="services-section" id="services">
+    <div class="section-header">
+        <div class="section-badge">Our Services</div>
+        <h2 class="section-title">Complete Roofing Solutions</h2>
+        <p class="section-desc">From residential repairs to commercial installations, we deliver excellence in every project with premium materials and expert craftsmanship.</p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <img src="images/service-1.jpg" class="service-img" alt="Roof Installation">
+            <h3 class="service-title">Roof Installation</h3>
+            <p class="service-desc">New roof installation with premium materials. Energy-efficient solutions designed to last decades with comprehensive warranties.</p>
+            <a href="#" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service-2.jpg" class="service-img" alt="Roof Repair">
+            <h3 class="service-title">Roof Repair</h3>
+            <p class="service-desc">Fast, reliable repairs for leaks, storm damage, and wear. 24/7 emergency services available when you need us most.</p>
+            <a href="#" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service-3.jpg" class="service-img" alt="Roof Replacement">
+            <h3 class="service-title">Roof Replacement</h3>
+            <p class="service-desc">Complete roof replacement with modern materials. Upgrade to energy-efficient roofing and increase your home's value.</p>
+            <a href="#" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service-4.jpg" class="service-img" alt="Roof Inspection">
+            <h3 class="service-title">Roof Inspection</h3>
+            <p class="service-desc">Comprehensive inspections with detailed reports. Identify issues early and get expert recommendations.</p>
+            <a href="#" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service-5.jpg" class="service-img" alt="Gutter Systems">
+            <h3 class="service-title">Gutter Systems</h3>
+            <p class="service-desc">Professional gutter installation, repair, and cleaning. Protect your foundation with proper water management.</p>
+            <a href="#" class="service-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service-6.jpg" class="service-img" alt="Storm Damage">
+            <h3 class="service-title">Storm Damage</h3>
+            <p class="service-desc">Emergency storm damage repair and assessment. Insurance claims assistance and rapid response team.</p>
+            <a href="#" class="service-link">Learn More →</a>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Before/After Gallery -->
+<section class="gallery-section" id="gallery">
+    <div class="section-header">
+        <div class="section-badge">Our Work</div>
+        <h2 class="section-title">See the Transformation</h2>
+        <p class="section-desc">Real projects, real results. Explore our before and after gallery showcasing the quality and craftsmanship we deliver.</p>
+    </div>
+    <div class="before-after-container">
+        <div class="ba-slider-wrapper">
+            <div class="ba-image-container">
+                <img src="images/after-1.jpg" alt="Before" class="ba-before-img" id="ba-before">
+                <div class="ba-after-overlay" id="ba-after-overlay">
+                    <img src="images/before-1.png" alt="After" class="ba-after-img" id="ba-after">
+                </div>
+                <div class="ba-slider-line" id="ba-slider-line">
+                    <div class="ba-slider-handle">
+                        <span class="arrow-left"></span>
+                        <span class="arrow-right"></span>
+                    </div>
+                </div>
+                <div class="ba-labels">
+                    <div class="ba-label">Before</div>
+                    <div class="ba-label">After</div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-controls">
+            <div class="gallery-dot active" data-index="0"></div>
+            <div class="gallery-dot" data-index="1"></div>
+            <div class="gallery-dot" data-index="2"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="section-header">
+            <div class="section-badge">How We Work</div>
+            <h2 class="section-title">Our Proven Process</h2>
+            <p class="section-desc">A streamlined approach designed for your convenience, transparency, and complete satisfaction.</p>
+        </div>
+        <div class="process-timeline">
+            <div class="timeline-line"></div>
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">Free Consultation</h3>
+                    <p class="step-desc">Contact us for a no-obligation consultation. We'll discuss your needs, budget, and timeline. Get a transparent estimate within 24 hours.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">Professional Inspection</h3>
+                    <p class="step-desc">Our certified experts conduct a thorough roof inspection. We use drone technology and detailed checklists to assess every aspect of your roof.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">Detailed Proposal</h3>
+                    <p class="step-desc">Receive a comprehensive proposal with material options, timeline, warranty information, and transparent pricing. No hidden fees, ever.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 class="step-title">Expert Execution</h3>
+                    <p class="step-desc">Professional installation by certified craftsmen. We maintain a clean, safe worksite and complete projects on time with minimal disruption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-header">
+            <div class="section-badge">Testimonials</div>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-desc">Don't just take our word for it. Here's what homeowners across the region say about our work.</p>
+        </div>
+        <div class="testimonials-carousel">
+            <div class="testimonials-wrapper">
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Elite Roofing transformed our old, leaking roof into a beautiful, modern masterpiece. The team was professional, punctual, and the quality of work exceeded our expectations. Highly recommended!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div>
+                                <div class="author-name">Jennifer Davis</div>
+                                <div class="author-location">Springfield, MA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "After storm damage, Elite Roofing responded within hours. They handled everything from insurance claims to installation. Our new roof looks amazing and we have complete peace of mind."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MR</div>
+                            <div>
+                                <div class="author-name">Michael Rodriguez</div>
+                                <div class="author-location">Boston, MA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Outstanding service from start to finish. The crew was respectful, the worksite was kept clean, and the final result is perfect. Best roofing company we've worked with!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SC</div>
+                            <div>
+                                <div class="author-name">Sarah Chen</div>
+                                <div class="author-location">Worcester, MA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-btn" onclick="prevTestimonial()">‹</button>
+                <button class="carousel-btn" onclick="nextTestimonial()">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready for a Better Roof?</h2>
+            <p>Join thousands of satisfied homeowners. Get your free, no-obligation estimate today.</p>
+            <div class="cta-buttons">
+                <button class="btn-white" onclick="openModal()">
+                    Get Free Estimate
+                    <span>→</span>
+                </button>
+                <a href="tel:555-ROOF-PRO" class="btn-secondary">
+                    📞 Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Elite Roofing Co.</h3>
+                <p>Premier roofing solutions serving Massachusetts for over 28 years. Quality, integrity, and customer satisfaction guaranteed.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">𝕏</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">📷</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">→ Home</a></li>
+                    <li><a href="#services">→ Services</a></li>
+                    <li><a href="#gallery">→ Gallery</a></li>
+                    <li><a href="#testimonials">→ Testimonials</a></li>
+                    <li><a href="#process">→ Our Process</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">→ Roof Installation</a></li>
+                    <li><a href="#">→ Roof Repair</a></li>
+                    <li><a href="#">→ Roof Replacement</a></li>
+                    <li><a href="#">→ Inspections</a></li>
+                    <li><a href="#">→ Emergency Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><a href="tel:555-ROOF-PRO">📞 (555) ROOF-PRO</a></li>
+                    <li><a href="mailto:info@eliteroofing.com">✉️ info@eliteroofing.com</a></li>
+                    <li>📍 123 Construction Ave<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boston, MA 02101</li>
+                    <li>🕐 Mon-Sat: 7AM - 7PM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24/7 Emergency Service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Elite Roofing Co. All rights reserved. | Licensed & Insured | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <!-- Estimate Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeModal()">×</button>
+                <h3 class="modal-title">Get Your Free Estimate</h3>
+                <p class="modal-subtitle">Fill out the form below and we'll contact you within 24 hours.</p>
+            </div>
+            <div class="modal-body">
+                <form id="estimate-form" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <label class="form-label">Full Name <span class="required">*</span></label>
+                        <input type="text" class="form-input" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number <span class="required">*</span></label>
+                        <input type="tel" class="form-input" placeholder="(555) 123-4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Property Address <span class="required">*</span></label>
+                        <input type="text" class="form-input" placeholder="123 Main Street, Boston, MA" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Project Type <span class="required">*</span></label>
+                        <select class="form-select" required>
+                            <option value="">Select a service...</option>
+                            <option value="installation">New Roof Installation</option>
+                            <option value="repair">Roof Repair</option>
+                            <option value="replacement">Roof Replacement</option>
+                            <option value="inspection">Roof Inspection</option>
+                            <option value="emergency">Emergency Service</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Additional Details</label>
+                        <input type="text" class="form-input" placeholder="Any specific concerns or requirements...">
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
