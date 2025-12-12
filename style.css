@@ -159,7 +159,7 @@
             background: #dc2626;
         }
          
-        /* MOBILE RESPONSIVE */
+                 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     .nav-container {
@@ -198,37 +198,13 @@
         height: 14px;
     }
 
-    /* CTA button responsive */
-    .cta-nav {
-        font-size: 0.40rem;
-        border-radius: 10px;
-        width: 60px;
-    }
+
+        .cta-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(234, 88, 12, 0.5);
+            background: #dc2626;
+        }
 }
-
-/* EXTRA SMALL MOBILE (MAX 480PX) */
-@media (max-width: 480px) {
-
-    .logo {
-        font-size: 0.80rem;
-    }
-
-    .cta-nav {
-        width: 20%;
-        font-size: 8px;
-        text-align: center;
-    }
-
-    .header-right {
-        width: 100%;
-        align-items: flex-start;
-    }
-     .header-phone {
-        font-size: 0.80rem;
-        gap: 2px;
-    }
-}      
-
         /* Hero Section with Parallax */
         .hero {
             height: 100vh;
@@ -1461,4 +1437,5 @@
             }
 
         }
+
 
