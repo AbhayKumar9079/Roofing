@@ -158,17 +158,17 @@
             box-shadow: 0 6px 25px rgba(234, 88, 12, 0.5);
             background: #dc2626;
         }
-                  /* MOBILE RESPONSIVE */
+         
+        /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     .nav-container {
         padding: 12px 20px;
         flex-wrap: nowrap;
-        gap: 10px;
+        gap: 2px;
     }
 
     .logo {
-        font-size: 1;
         gap: 2px;
     }
 
@@ -190,21 +190,19 @@
     }
 
     .header-phone {
-        font-size: 0.50rem;
         gap: 2px;
     }
 
     .header-phone svg {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
     }
 
     /* CTA button responsive */
     .cta-nav {
-        font-size: 0.50rem;
+        font-size: 0.40rem;
         border-radius: 10px;
-        width: 20px;
-        margin-right: 10px;
+        width: 60px;
     }
 }
 
@@ -212,11 +210,11 @@
 @media (max-width: 480px) {
 
     .logo {
-        font-size: 1rem;
+        font-size: 0.80rem;
     }
 
     .cta-nav {
-        width: 25%;
+        width: 20%;
         font-size: 8px;
         text-align: center;
     }
@@ -225,7 +223,11 @@
         width: 100%;
         align-items: flex-start;
     }
-}
+     .header-phone {
+        font-size: 0.80rem;
+        gap: 2px;
+    }
+}      
 
         /* Hero Section with Parallax */
         .hero {
@@ -1459,3 +1461,4 @@
             }
 
         }
+
