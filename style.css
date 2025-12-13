@@ -123,29 +123,36 @@
 
 @media (max-width: 768px) {
 
-    .nav-menu {
+     .nav-menu {
         position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100%;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 400px;
         background: #0f172a;
         flex-direction: column;
+        padding: 90px 25px;
         gap: 22px;
-        padding: 25px 0;
-        display: none;
+        transition: right 0.35s ease;
+        z-index: 9999;
+        display: flex;
     }
 
     .nav-menu.active {
-        display: flex;
+        right: 0;
+    }
+
+    .nav-menu a {
+        font-size: 1.1rem;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .hamburger {
         display: flex;
+        z-index: 10000;
     }
 
-    .header-phone {
-        font-size: 0.8rem;
-    }
 
     .cta-nav {
         font-size: 0.75rem;
@@ -1522,4 +1529,5 @@
                 flex-direction: column;
             }
         }
+
 
