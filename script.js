@@ -15,6 +15,9 @@
                 stickyCta.classList.remove('visible');
             }
         });
+     function toggleMenu() {
+     document.querySelector('.nav-menu').classList.toggle('active');
+     }
 
         // Hero parallax effect
         let heroImg = document.getElementById('hero-img');
@@ -237,4 +240,5 @@ document.querySelectorAll('.gallery-dot').forEach(dot => {
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
+
         });
