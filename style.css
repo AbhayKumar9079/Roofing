@@ -110,6 +110,7 @@
     flex-direction: column;
     gap: 4px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .hamburger span {
@@ -149,6 +150,7 @@
     .cta-nav {
         font-size: 0.75rem;
         padding: 8px 12px;
+        margin-right: 20px;
     }
 }
 
@@ -1433,6 +1435,10 @@
         }
 
         @media (max-width: 768px) {
+            .header-phone {
+             display: none;
+          }
+            
           
             .hero {
                 margin-top: 20px;
@@ -1516,3 +1522,4 @@
                 flex-direction: column;
             }
         }
+
